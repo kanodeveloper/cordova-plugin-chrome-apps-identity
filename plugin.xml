@@ -19,8 +19,6 @@
   <dependency id="cordova-plugin-chrome-apps-common@1" />
   <dependency id="cordova-plugin-chrome-apps-runtime@1" />
   <dependency id="cordova-plugin-inappbrowser@1" />
-  <dependency id="cordova-plugin-google-open-source-ios" />
-  <dependency id="cordova-plugin-google-plus-ios" />
 
   <js-module src="identity.js" name="Identity">
     <clobbers target="chrome.identity" />
@@ -42,19 +40,8 @@
       <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/*">
-      <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+      <uses-permission android:name="android.permission.GET_ACCOUNTS" android:maxSdkVersion="22" />
     </config-file>
 
-  </platform>
-
-  <platform name="ios">
-     <source-file src="src/ios/ChromeIdentity.m" />
-
-     <config-file target="config.xml" parent="/widget">
-       <feature name="ChromeIdentity">
-         <param name="ios-package" value="ChromeIdentity"/>
-       </feature>
-       <access origin="https://accounts.google.com/*" />
-     </config-file>
-  </platform>
+  </platform> 
 </plugin>
