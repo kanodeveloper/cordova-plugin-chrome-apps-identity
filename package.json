@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-google-identity",
-  "version": "1.4.8",
+  "version": "1.4.9",
   "description": "This plugin provides OAuth2 authentication for Android and iOS.",
   "cordova": {
     "id": "cordova-plugin-chrome-apps-identity",
