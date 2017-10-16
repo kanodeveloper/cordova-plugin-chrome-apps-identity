@@ -25,8 +25,8 @@
   </js-module>
 
   <platform name="android">
-    <framework src="com.google.android.gms:play-services-identity:+" />
-    <framework src="com.google.android.gms:play-services-auth:+" />
+    <framework src="com.google.android.gms:play-services-identity:11.0.+" />
+    <framework src="com.google.android.gms:play-services-auth:11.0.+" />
 
     <source-file src="src/android/ChromeIdentity.java" target-dir="src/org/chromium" />
 
@@ -43,5 +43,5 @@
       <uses-permission android:name="android.permission.GET_ACCOUNTS" android:maxSdkVersion="22" />
     </config-file>
 
-  </platform> 
+  </platform>
 </plugin>
